@@ -19,7 +19,7 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '..', 'assets'));
 
   await app.listen(process.env.PORT || 8080, () => {
-    new Logger().log(`API is started on PORT ${process.env.PORT || 8080}...`);
+    new Logger().log(`API is started on PORT ${process.env.PORT || 3080}...`);
   });
 }
 bootstrap();
